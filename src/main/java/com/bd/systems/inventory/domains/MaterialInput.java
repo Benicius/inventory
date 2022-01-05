@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
+@Table(name = "material_input")
 public class MaterialInput {
 
     @Id

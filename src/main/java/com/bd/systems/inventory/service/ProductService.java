@@ -14,19 +14,19 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    private List<Product> findAll(){
+    public List<Product> findAll(){
         return productRepository.findAll();
     }
 
-    private Optional<Product> findById(Long id){
+    public Optional<Product> findById(Long id){
         return productRepository.findById(id);
     }
 
-    private Product saveProduct(Product product){
+    public Product saveProduct(Product product){
         return productRepository.save(product);
     }
 
-    private Product updateProduct(Product product){
+    public Product updateProduct(Product product){
         return productRepository.save(product);
     }
 }
